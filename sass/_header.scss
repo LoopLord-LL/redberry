@@ -1,0 +1,35 @@
+header {
+  display: flex;
+  align-items: center;
+  color: $bg-color;
+  .title-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1 {
+      font-size: 31px;
+      font-weight: 400;
+    }
+  }
+  .action-buttons {
+    margin-left: auto;
+    display: flex;
+    gap: 40px;
+    a {
+      font-size: 16px;
+      font-weight: 400;
+    }
+    .create-employee {
+      border: 1px solid $bg-color;
+      border-radius: 5px;
+      padding: 10px 20px;
+      color: $secondary-text-color;
+    }
+    .create-task {
+      background-color: $bg-color;
+      padding: 10px 20px;
+      color: $primary-text-color;
+      border-radius: 5px;
+    }
+  }
+}

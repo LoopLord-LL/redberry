@@ -1,0 +1,124 @@
+header {
+  display: flex;
+  align-items: center;
+  color: rgb(131, 56, 236);
+}
+header .title-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .title-area h1 {
+  font-size: 31px;
+  font-weight: 400;
+}
+header .action-buttons {
+  margin-left: auto;
+  display: flex;
+  gap: 40px;
+}
+header .action-buttons a {
+  font-size: 16px;
+  font-weight: 400;
+}
+header .action-buttons .create-employee {
+  border: 1px solid rgb(131, 56, 236);
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: rgb(33, 37, 41);
+}
+header .action-buttons .create-task {
+  background-color: rgb(131, 56, 236);
+  padding: 10px 20px;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+.dropdown-group {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 18px;
+  align-items: center;
+  margin-top: 52px;
+  border: 1px solid rgb(222, 226, 230);
+  max-width: 688px;
+  height: 44px;
+  border-radius: 10px;
+}
+.dropdown-group .dropdown {
+  position: relative;
+}
+.dropdown-group .dropdown .dropdown-trigger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  /* Optional: Change direction by changing rotation */
+}
+.dropdown-group .dropdown .dropdown-trigger .dropdown-label {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+}
+.dropdown-group .dropdown .dropdown-trigger .dropdown-arrow {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  border-right: 2px solid #333;
+  border-bottom: 2px solid #333;
+}
+.dropdown-group .dropdown .dropdown-trigger .dropdown-arrow.up {
+  transform: rotate(-135deg);
+}
+.dropdown-group .dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 36px;
+  background-color: rgb(255, 255, 255);
+  border: 0.5px solid rgb(131, 56, 236);
+  border-radius: 10px;
+  padding: 10px;
+  width: 688px;
+}
+.dropdown-group .dropdown .dropdown-menu .dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.dropdown-group .dropdown .dropdown-menu .dropdown-item input[type=checkbox] {
+  margin-right: 10px;
+}
+.dropdown-group .dropdown .dropdown-menu .select-button {
+  background-color: purple;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.dropdown-group .dropdown.open .dropdown-menu {
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1680px;
+  padding: 31px 120px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.task-page {
+  font-weight: 600;
+  font-size: 34px;
+  color: rgb(33, 37, 41);
+  margin-top: 40px;
+}/*# sourceMappingURL=main.css.map */

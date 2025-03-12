@@ -1,0 +1,9 @@
+$primary-text-color: rgba(255, 255, 255, 1);
+$secondary-text-color: rgba(33, 37, 41, 1);
+
+$bg-color: rgba(131, 56, 236, 1);
+
+@mixin font-style($size, $weight) {
+  font-size: $size;
+  font-weight: $weight;
+}

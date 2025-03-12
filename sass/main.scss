@@ -1,0 +1,19 @@
+@import "_imports";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1680px;
+  padding: 31px 120px;
+}
+a {
+  text-decoration: none;
+}
+.task-page {
+  font-weight: 600;
+  font-size: 34px;
+  color: $secondary-text-color;
+  margin-top: 40px;
+}

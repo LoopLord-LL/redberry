@@ -1,0 +1,73 @@
+.dropdown-group {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 18px;
+  align-items: center;
+  margin-top: 52px;
+  border: 1px solid rgba(222, 226, 230, 1);
+  max-width: 688px;
+  height: 44px;
+  border-radius: 10px;
+  .dropdown {
+    position: relative;
+    .dropdown-trigger {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      .dropdown-label {
+        cursor: pointer;
+        @include font-style(16px, 400);
+      }
+      .dropdown-arrow {
+        width: 10px;
+        height: 10px;
+        border-radius: 2px;
+        transform: rotate(45deg);
+        border-right: 2px solid #333;
+        border-bottom: 2px solid #333;
+      }
+
+      /* Optional: Change direction by changing rotation */
+      .dropdown-arrow.up {
+        transform: rotate(-135deg);
+      }
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 36px;
+      background-color: $primary-text-color;
+      border: 0.5px solid $bg-color;
+      border-radius: 10px;
+      padding: 10px;
+      width: 688px;
+
+      .dropdown-item {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+
+        input[type="checkbox"] {
+          margin-right: 10px;
+        }
+      }
+
+      .select-button {
+        background-color: purple; // Or your button color
+        color: white;
+        border: none;
+        padding: 8px 15px;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+    }
+
+    &.open {
+      .dropdown-menu {
+        display: block;
+      }
+    }
+  }
+}

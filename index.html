@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress Tracking</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="title-area">
+        <h1>Momentum</h1>
+        <img src="./assets/images/Hourglass.png" alt="Hourglass" />
+      </div>
+      <div class="action-buttons">
+        <a href="#" class="create-employee">თანამშრომლის შექმნა</a>
+        <a href="#" class="create-task">+ შექმენი ახალი დავალება</a>
+      </div>
+    </header>
+    <h2 class="task-page">დავალებების გვერდი</h2>
+    <main>
+      <section class="dropdown-group">
+        <!-- first -->
+        <div class="dropdown">
+          <div class="dropdown-trigger">
+            <label class="dropdown-label" for="department">დეპარტამენტი</label>
+            <div class="dropdown-arrow"></div>
+          </div>
+          <div class="dropdown-menu">
+            <!-- items -->
+            <div class="dropdown-item">
+              <input type="checkbox" id="marketing" value="marketing" />
+              <label for="marketing">მარკეტინგის დეპარტამენტი</label>
+            </div>
+            <div class="dropdown-item">
+              <input type="checkbox" id="design" value="design" />
+              <label for="design">დიზაინის დეპარტამენტი</label>
+            </div>
+            <div class="dropdown-item">
+              <input type="checkbox" id="logistics" value="logistics" />
+              <label for="logistics">ლოჯისტიკის დეპარტამენტი</label>
+            </div>
+            <div class="dropdown-item">
+              <input type="checkbox" id="it" value="it" />
+              <label for="it">IT დეპარტამენტი</label>
+            </div>
+            <!-- select button-->
+            <button class="select-button">არჩევა</button>
+          </div>
+        </div>
+        <!-- SECOND FILTER -->
+        <div class="dropdown">
+          <div class="dropdown-trigger">
+            <label class="dropdown-label" for="department">დეპარტამენტი</label>
+            <div class="dropdown-arrow"></div>
+          </div>
+          <div class="dropdown-menu">
+            <!-- items -->
+            <div class="dropdown-item">
+              <input type="checkbox" id="low" value="low" />
+              <label for="low">დაბალი</label>
+            </div>
+            <div class="dropdown-item">
+              <input type="checkbox" id="medium" value="medium" />
+              <label for="medium">საშუალო</label>
+            </div>
+            <div class="dropdown-item">
+              <input type="checkbox" id="high" value="high" />
+              <label for="high">მაღალი</label>
+            </div>
+            <!-- select button -->
+            <button class="select-button">არჩევა</button>
+          </div>
+        </div>
+        <!-- THIRD FILTER -->
+        <div class="dropdown">
+          <div class="dropdown-trigger">
+            <label class="dropdown-label" for="department">დეპარტამენტი</label>
+            <div class="dropdown-arrow"></div>
+          </div>
+          <div class="dropdown-menu">
+            <!-- items -->
+            <div class="dropdown-item">
+              <input type="checkbox" id="marketing" value="marketing" />
+              <label for="marketing">ელია ბაგრატიონი</label>
+            </div>
+            <div class="dropdown-item">
+              <input type="checkbox" id="marketing" value="marketing" />
+              <label for="marketing">გიორგუ კეკელიძე</label>
+            </div>
+            <div class="dropdown-item">
+              <input type="checkbox" id="marketing" value="marketing" />
+              <label for="marketing">მარიამ მაჭავარიანი</label>
+            </div>
+            <div class="dropdown-item">
+              <input type="checkbox" id="marketing" value="marketing" />
+              <label for="marketing">ნიკა მაღლაკელიძე</label>
+            </div>
+            <!-- select button -->
+            <button class="select-button">არჩევა</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="./js/filter-controls.js"></script>
+</html>
