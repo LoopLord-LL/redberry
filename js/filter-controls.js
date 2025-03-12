@@ -15,14 +15,12 @@ dropdowns.forEach(dropdown => {
   });
 
   selectButton.addEventListener('click', () => {
-    // Logic to handle selected checkboxes
     const checkedCheckboxes = menu.querySelectorAll('input[type="checkbox"]:checked');
     checkedCheckboxes.forEach(checkbox => {
-      console.log(checkbox.value); // Log the selected values
-      // You can do something with the selected values here
+      console.log(checkbox.value); 
     });
 
-    dropdown.classList.remove('open'); // Close the dropdown
+    dropdown.classList.remove('open'); 
   });
 
   document.addEventListener('click', (event) => {

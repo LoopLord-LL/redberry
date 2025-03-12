@@ -101,6 +101,43 @@ header .action-buttons .create-task {
   display: block;
 }
 
+.status-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 52px;
+  margin-top: 80px;
+}
+.status-navigation h3 {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 500;
+}
+.status-navigation .status-pending {
+  background-color: rgb(247, 188, 48);
+}
+.status-navigation .status-active {
+  background-color: rgb(251, 86, 7);
+}
+.status-navigation .status-review {
+  background-color: rgb(255, 0, 110);
+}
+.status-navigation .status-done {
+  background-color: rgb(58, 134, 255);
+}
+.status-navigation .status-pending,
+.status-navigation .status-active,
+.status-navigation .status-review,
+.status-navigation .status-done {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 15px 0;
+  width: 100%;
+  max-width: 381px;
+}
+
 * {
   margin: 0;
   padding: 0;

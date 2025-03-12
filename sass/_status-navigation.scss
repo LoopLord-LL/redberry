@@ -1,0 +1,35 @@
+.status-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 52px;
+  margin-top: 80px;
+  h3 {
+    color: $primary-text-color;
+    @include font-style(20px, 500);
+  }
+  .status-pending {
+    background-color: rgba(247, 188, 48, 1);
+  }
+  .status-active {
+    background-color: rgba(251, 86, 7, 1);
+  }
+  .status-review {
+    background-color: rgba(255, 0, 110, 1);
+  }
+  .status-done {
+    background-color: rgba(58, 134, 255, 1);
+  }
+  .status-pending,
+  .status-active,
+  .status-review,
+  .status-done {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 15px 0;
+    width: 100%;
+    max-width: 381px;
+  }
+}
