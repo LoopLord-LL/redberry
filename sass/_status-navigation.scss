@@ -5,8 +5,8 @@
   gap: 52px;
   margin-top: 80px;
   h3 {
-    color: $primary-text-color;
     @include font-style(20px, 500);
+    color: $primary-text-color;
   }
   .status-pending {
     background-color: rgba(247, 188, 48, 1);
