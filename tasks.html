@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasks</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="title-area">
+        <h1>Momentum</h1>
+        <img src="./assets/images/Hourglass.png" alt="Hourglass" />
+      </div>
+      <div class="action-buttons">
+        <a href="#" class="create-employee" id="add-employee-btn">
+          თანამშრომლის შექმნა
+        </a>
+        <a href="#" class="create-task">+ შექმენი ახალი დავალება</a>
+      </div>
+    </header>
+
+    <h2 class="task-page">შექმენი ახალი დავალება</h2>
+
+    <div class="task-container">
+      <div class="task-l-side">
+        <div class="task-form">
+          <label for="title">სათაური*</label>
+          <input type="text" name="title" id="title" />
+          <p id="title-symbol-limit">მინიმუმ 3 სიმბოლო</p>
+          <p id="title-symbol-limit-max">მაქსიმუმ 255 სიმბოლო</p>
+        </div>
+        <div class="task-form">
+          <label for="description">აღწერა</label>
+          <textarea name="description" id="description"></textarea>
+          <p id="description-symbol-limit">მინიმუმ 3 სიმბოლო</p>
+          <p id="description-symbol-limit-max">მაქსიმუმ 255 სიმბოლო</p>
+        </div>
+
+        <div class="task-form-flex">
+          <div class="priority">
+            <label for="priority">პრიორიტეტი</label>
+            <select name="priority" id="priority" class="priority">
+              <!-- <option value="medium">საშუალო</option>
+              <option value="low">მარტივი</option>
+              <option value="high">რთული</option> -->
+            </select>
+          </div>
+
+          <div class="status">
+            <label for="status">სტატუსი*</label>
+            <select name="status" id="status"></select>
+          </div>
+        </div>
+      </div>
+      <!-- Closing tag added -->
+
+      <div class="task-r-side">
+        <div class="task-form">
+          <label for="department">დეპარტამენტი*</label>
+          <select name="department" id="department"></select>
+        </div>
+        <div class="task-form">
+          <label for="employee">პასუხისმგებელი თანამშრომელი*</label>
+          <select name="employee" id="employee"></select>
+        </div>
+        <div class="task-form">
+          <label for="deadline">დედლაინი</label>
+          <input
+            type="date"
+            name="deadline"
+            id="deadline"
+            placeholder="MM/DD/YYYY"
+            class="deadline"
+          />
+        </div>
+        <button class="make-task" id="make-task">დავალების შექმნა</button>
+      </div>
+    </div>
+    <!-- Closing tag added -->
+
+    <script src="./js/_assigment.js"></script>
+  </body>
+</html>

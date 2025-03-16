@@ -4,11 +4,13 @@ header {
   color: rgb(131, 56, 236);
 }
 header .title-area {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 header .title-area h1 {
+  font-family: "fredokaOne";
   font-size: 31px;
   font-weight: 400;
 }
@@ -160,14 +162,16 @@ form .first-info {
   gap: 10px;
   width: 100%;
 }
-form .first-info .name, form .first-info .surname {
+form .first-info .name,
+form .first-info .surname {
   display: flex;
   flex-direction: column;
   max-width: 384px;
   width: 100%;
   height: 42px;
 }
-form .first-info #first-name, form .first-info #last-name {
+form .first-info #first-name,
+form .first-info #last-name {
   flex: 1;
   padding: 8px;
   border: 1px solid #ccc;
@@ -220,7 +224,7 @@ form .dropdown-container .department {
   width: 384px;
   height: 42px;
   margin-top: 45px;
-  border: 1px solid #CED4DA;
+  border: 1px solid #ced4da;
   border-radius: 6px;
   background-color: #ffffff;
   padding-right: 30px;
@@ -252,14 +256,14 @@ form .user-buttons {
 }
 form .user-buttons .discard {
   padding: 9px 16px;
-  border: 1px solid #8338EC;
+  border: 1px solid #8338ec;
   border-radius: 5px;
-  color: #343A40;
+  color: #343a40;
   background: none;
   cursor: pointer;
 }
 form .user-buttons .add-user {
-  background-color: #8338EC;
+  background-color: #8338ec;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -267,6 +271,115 @@ form .user-buttons .add-user {
   cursor: pointer;
 }
 
+.task-container {
+  background-color: rgb(221, 210, 255);
+  display: flex;
+  margin-top: 25px;
+  padding-top: 65px;
+  padding-bottom: 200px;
+  gap: 160px;
+}
+.task-container label {
+  color: rgb(52, 58, 64);
+  padding-bottom: 6px;
+}
+.task-container p {
+  color: rgb(108, 117, 125);
+  font-size: 10px;
+  font-weight: 350px;
+  padding-top: 4px;
+}
+.task-container input,
+.task-container select {
+  height: 45px;
+  border-radius: 5px;
+  border: 1px solid rgb(222, 226, 230);
+}
+.task-container textarea {
+  height: 130px;
+  border-radius: 5px;
+  border: 1px solid rgb(222, 226, 230);
+}
+.task-container .task-form {
+  display: flex;
+  flex-direction: column;
+}
+.task-container .task-r-side {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 55px;
+  margin-right: 55px;
+}
+.task-container .task-r-side .deadline {
+  width: 50%;
+}
+.task-container .task-r-side .make-task {
+  cursor: pointer;
+  background: none;
+  font-size: 18;
+  background-color: rgb(131, 56, 236);
+  padding: 10px 20px;
+  border: none;
+  width: 40%;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.task-container .task-r-side .make-task:hover {
+  background-color: rgba(131, 56, 236, 0.8);
+}
+.task-container .task-l-side {
+  max-width: 550px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 55px;
+  margin-left: 55px;
+}
+.task-container .task-l-side .task-form-flex {
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+}
+.task-container .task-l-side .task-form-flex .status,
+.task-container .task-l-side .task-form-flex .priority {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.task-container input[type=date] {
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 30px; /* Adjust padding to make space for the calendar icon */
+}
+.task-container input[type=date]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 0;
+  margin-left: 5px; /* Adjust margin to position the calendar icon */
+}
+
+@font-face {
+  font-family: "firagoSmall";
+  src: url(../assets/font/firago_5.2.5/ttf/firago-latin-300-normal.ttf);
+}
+@font-face {
+  font-family: "firagoRegular";
+  src: url(../assets/font/firago_5.2.5/ttf/firago-latin-400-normal.ttf);
+}
+@font-face {
+  font-family: "firagoBold";
+  src: url(../assets/font/firago_5.2.5/ttf/firago-latin-700-normal.ttf);
+}
+@font-face {
+  font-family: "fredokaOne";
+  src: url(../assets/font/Fredoka/Fredoka-Bold.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -276,6 +389,7 @@ form .user-buttons .add-user {
 body {
   max-width: 1680px;
   padding: 31px 120px;
+  font-family: "firagoRegular";
 }
 
 a {
@@ -283,8 +397,8 @@ a {
 }
 
 .task-page {
-  font-weight: 600;
   font-size: 34px;
+  font-family: "firagoBold";
   color: rgb(33, 37, 41);
   margin-top: 40px;
 }/*# sourceMappingURL=main.css.map */

@@ -13,8 +13,10 @@
         <img src="./assets/images/Hourglass.png" alt="Hourglass" />
       </div>
       <div class="action-buttons">
-        <a href="#" class="create-employee" id="add-employee-btn" >თანამშრომლის შექმნა</a>
-        <a href="#" class="create-task">+ შექმენი ახალი დავალება</a>
+        <a href="#" class="create-employee" id="add-employee-btn"
+          >თანამშრომლის შექმნა</a
+        >
+        <a href="./tasks.html" class="create-task">+ შექმენი ახალი დავალება</a>
       </div>
     </header>
     <h2 class="task-page">დავალებების გვერდი</h2>
@@ -105,9 +107,7 @@
       <section class="status-navigation">
         <div class="status-pending">
           <h3>დასაწყები</h3>
-          <div class="task-cards">
-            
-          </div>
+          <div class="task-cards"></div>
         </div>
         <div class="status-active">
           <h3>პროგრესში</h3>
@@ -126,41 +126,50 @@
       <!-- MODAL BOX -->
       <form id="user-form">
         <h2>თანამშრომლის დამატება</h2>
-        
-       <div class="first-info">
-        <div class="name">
-          <label for="first-name">სახელი*</label>
-          <input type="text" id="first-name" name="first-name" required>
+
+        <div class="first-info">
+          <div class="name">
+            <label for="first-name">სახელი*</label>
+            <input type="text" id="first-name" name="first-name" required />
+          </div>
+
+          <div class="surname">
+            <label for="last-name">გვარი*</label>
+            <input type="text" id="last-name" name="last-name" required />
+          </div>
         </div>
-        
-        <div class="surname">
-          <label for="last-name">გვარი*</label>
-          <input type="text" id="last-name" name="last-name" required >
-        </div>
-       </div>
-        
+
         <label for="avatar" class="avatar-title">ავატარი*</label>
         <div class="avatar-upload">
-            <input type="file" id="avatar" name="avatar" accept="image/*">
-            <div class="avatar-preview">
-                <img id="avatar-img" src="./assets/images/avatar.png" alt="Avatar Preview">
-                <!-- <button type="button" id="remove-avatar">&#128465;</button> -->
-            </div>
+          <input type="file" id="avatar" name="avatar" accept="image/*" />
+          <div class="avatar-preview">
+            <img
+              id="avatar-img"
+              src="./assets/images/avatar.png"
+              alt="Avatar Preview"
+            />
+            <!-- <button type="button" id="remove-avatar">&#128465;</button> -->
+          </div>
         </div>
-        
+
         <div class="dropdown-container">
           <label for="department">დეპარტამენტი*</label>
-          <select id="department" name="department" class="department" required>
-          </select>
+          <select
+            id="department"
+            name="department"
+            class="department"
+            required
+          ></select>
           <span class="dropdown-arrow"></span>
-      </div>
+        </div>
         <div class="user-buttons">
           <button type="button" class="discard">გაუქმება</button>
-        <button type="submit" class="add-user">დამატება თანამშრომელი</button>
+          <button type="submit" class="add-user">დამატება თანამშრომელი</button>
         </div>
-    </form>
+      </form>
     </main>
   </body>
   <script src="./js/filter-controls.js"></script>
   <script src="./js/form.js"></script>
+  <script src="./js/_assigment.js"></script>
 </html>

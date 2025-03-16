@@ -1,4 +1,20 @@
 @import "_imports";
+@font-face {
+  font-family: "firagoSmall";
+  src: url(../assets/font/firago_5.2.5/ttf/firago-latin-300-normal.ttf);
+}
+@font-face {
+  font-family: "firagoRegular";
+  src: url(../assets/font/firago_5.2.5/ttf/firago-latin-400-normal.ttf);
+}
+@font-face {
+  font-family: "firagoBold";
+  src: url(../assets/font/firago_5.2.5/ttf/firago-latin-700-normal.ttf);
+}
+@font-face {
+  font-family: "fredokaOne";
+  src: url(../assets/font/Fredoka/Fredoka-Bold.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -7,14 +23,15 @@
 body {
   max-width: 1680px;
   padding: 31px 120px;
+  font-family: "firagoRegular";
 }
 
 a {
   text-decoration: none;
 }
 .task-page {
-  font-weight: 600;
   font-size: 34px;
+  font-family: "firagoBold";
   color: $secondary-text-color;
   margin-top: 40px;
 }

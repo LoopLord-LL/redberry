@@ -1,0 +1,94 @@
+.task-container {
+  background-color: rgba(221, 210, 255, 1);
+  display: flex;
+  margin-top: 25px;
+  padding-top: 65px;
+  padding-bottom: 200px;
+  gap: 160px;
+  label {
+    color: rgba(52, 58, 64, 1);
+    padding-bottom: 6px;
+  }
+  p {
+    color: rgba(108, 117, 125, 1);
+    font-size: 10px;
+    font-weight: 350px;
+    padding-top: 4px;
+  }
+  input,
+  select {
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid rgba(222, 226, 230, 1);
+  }
+  textarea {
+    height: 130px;
+    border-radius: 5px;
+    border: 1px solid rgba(222, 226, 230, 1);
+  }
+  .task-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .task-r-side {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 55px;
+    margin-right: 55px;
+    .deadline {
+      width: 50%;
+    }
+    .make-task {
+      cursor: pointer;
+      background: none;
+      font-size: 18;
+      background-color: rgba(131, 56, 236, 1);
+      padding: 10px 20px;
+      border: none;
+      width: 40%;
+      border-radius: 5px;
+      color: rgba(255, 255, 255, 1);
+      margin-left: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        background-color: rgba(131, 56, 236, 0.8);
+      }
+    }
+  }
+  .task-l-side {
+    max-width: 550px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 55px;
+    margin-left: 55px;
+
+    .task-form-flex {
+      display: flex;
+      gap: 32px;
+      justify-content: space-between;
+      .status,
+      .priority {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+    }
+  }
+  input[type="date"] {
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 30px; /* Adjust padding to make space for the calendar icon */
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    left: 0;
+    margin-left: 5px; /* Adjust margin to position the calendar icon */
+  }
+}

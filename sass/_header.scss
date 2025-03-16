@@ -3,10 +3,12 @@ header {
   align-items: center;
   color: $bg-color;
   .title-area {
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-between;
     h1 {
+      font-family: "fredokaOne";
       font-size: 31px;
       font-weight: 400;
     }
